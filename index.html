@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="es" translate="no">
+    <head>
+        <meta charset="UTF-8"/>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png"/>
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png"/>
+        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"/>
+        
+        <meta name="msapplication-config" content="images/favicon/browserconfig.xml" />
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png"/>
+        
+        <meta property="og:type" content="website"/>
+<!--         <meta property="og:url" content="link"/> -->
+<!--         <meta property="og:title" content="Inici — title"/> -->
+<!--         <meta property="og:site_name" content="title"/> -->
+        <meta property="og:locate:alternate" content="es_ES"/>
+        <meta property="og:locale:alternate" content="ca_AD"/>
+        <meta property="og:locale:alternate" content="fr_FR"/>
+        <meta property="og:locale" content="ca_ES"/>
+        <meta property="og:locale:alternate" content="en_US"/>
+        <meta property="og:locale:alternate" content="en_UK"/>
+<!--         <meta property="og:description" content="DEsc"/> -->
+<!--         <meta property="og:image" content="lnhk en https"/> -->
+        
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:url" content="link"/>
+<!--         <meta name="twitter:title" content="Inici - title"/> -->
+<!--         <meta name="twitter:description" content="desc"/> -->
+<!--         <meta name="twitter:image" content="link en https"/> -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"/>
+<!--         <meta name="title" content="Inici — title"/> -->
+<!--         <meta name="description" content="Desc"/> -->
+        <meta name="author" content="IES Clot de l'Illot"/>
+        <meta name="theme-color" content="rgb(82, 111, 197)"/>
+<!--         <meta name="aplication-name" content="title"/> -->
+        <meta name="google" content="notranslate"/> 
+
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        
+        <title>Inicio — title</title>
+        <link rel="manifest" href="images/favicon/manifest.webmanifest"/>
+        <link rel="stylesheet" href="css/panorama.css"/>
+    </head>
+    <body>
+        <nav>
+            <a class="navelement-phone navelement-phone-here">
+                <i class="material-icons noselect">
+                    today
+                </i>
+                <p>Hoy</p>
+            </a>
+            <a class="navelement-phone">
+                <i class="material-icons noselect">
+                    history
+                </i>
+                <p>Historial</p>
+            </a>
+            <a class="navelement-phone">
+                <i class="material-icons noselect">
+                    info
+                </i>
+                <p>Acerca</p>
+            </a>
+            <a class="navelement-phone">
+                <i class="material-icons noselect">
+                    settings
+                </i>
+                <p>Ajustes</p>
+            </a>
+        </nav>
+        <div class="body-content_">
+            <section class="timedisplay">
+                <div class="blocky-thing">
+                    <div class="title-0">
+                        <span>
+                            Actualizado hace 10s
+                        </span>
+                        <button id="live-on-off-btn" class="material-icons live-on-off-btn-class noselect">
+                            sensors_off
+                        </button>
+                    </div>
+                    <div class="temperature-block">
+                        <a class="temperature-value">
+                            20
+                        </a>
+                        <div class="temperature-other-options">
+                            <button id="celcius-btn" class="temp-btn temp-btn-active">ºC</button>
+                            <button id="fahrenheit-btn" class="temp-btn">ºF</button>
+                            <button id="kelvin-btn" class="temp-btn">K</button>
+                        </div>
+                    </div>
+                    <div class="msg-block">
+                        <i class="material-icons noselect">
+                            location_on
+                        </i>
+                        <span>
+                            I.E.S. Clot de L'Illot
+                        </span>
+                    </div>
+                    <div class="msg-block">
+                        <i class="material-icons noselect">
+                            bedtime
+                        </i>
+                            No olvides descansar
+                    </div>
+                </div>
+                <ul class="table-block">
+                    <li>
+                        <div class="title-journal">
+                            Durante la jornada de hoy
+                        </div>
+                    </li>
+                    <li>
+                        <div class="subgenere-label">
+                            <i class="material-icons noselect">
+                                thermostat
+                            </i>
+                            T. máxima
+                        </div>
+
+                        <span id="T_max_main" class="insert-data-table-main-screen">
+                            30 ºC
+                        </span>
+                    </li>
+                    <li>
+                        <div class="subgenere-label">
+                            <i class="material-icons noselect">
+                                ac_unit
+                            </i>
+                            T. mínima
+                        </div>
+
+                        <span id="T_max_main" class="insert-data-table-main-screen">
+                            12 ºC
+                        </span>
+                    </li>
+                    <li>
+                        <div class="subgenere-label">
+                            <i class="material-icons noselect">
+                                equalizer
+                            </i>
+                            T. promedia
+                        </div>
+                        <span id="T_max_main" class="insert-data-table-main-screen">
+                            27 ºC
+                        </span>
+                    </li>
+                    <li>
+                        <div class="subgenere-label">
+                            <i class="material-icons noselect">
+                                water_drop
+                            </i>
+                            Precipitación
+                        </div>
+                        <span id="T_max_main" class="insert-data-table-main-screen">
+                            0 L/m²
+                        </span>
+                    </li>
+                    <li>
+                        <div class="subgenere-label">
+                            <i class="material-icons noselect">
+                                air
+                            </i>
+                            Viento
+                        </div>
+                        <span id="T_max_main" class="insert-data-table-main-screen">
+                            3 km/h (dirección NE)
+                        </span>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="tablon-de-anuncios">
+                <div class="photo-exposer">
+                    <a class="titol-announcements">Foto destacada</a>
+                    <img class="photo-scr-expose" src="/images/placeholders/placeholder-photo.png">
+                </div>
+
+                <div class="ads-expose-container">
+                    <a class="titol-announcements">Tablón de anuncios</a>
+                    <div class="tile-widget xl-size-wed calendar-explample">
+                    </div>
+                    <div class="tile-widget l-size-wed">
+                    </div>
+                    <div class="tile-widget l-size-wed">
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <script src="js/dynamic-bg.js"></script>
+        <script src="js/dynamic-tiles-color-theme.js"></script>
+    </body>
+</html>

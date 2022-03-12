@@ -1,0 +1,1369 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*
+
+rules to apply glass design
+
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: 
+            blur(25px)
+        ;
+*/
+
+
+html{
+    overflow-y: visible;
+    overflow-x: hidden;
+    --setView: 333px;
+}
+input,
+textarea,
+button,
+select,
+a,
+div,
+nav,
+section,
+li,
+span {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body:not(.user-tab-mode) button:focus,
+body:not(.user-tab-mode) input:focus,
+body:not(.user-tab-mode) select:focus,
+body:not(.user-tab-mode) div:focus,
+body:not(.user-tab-mode) a:focus,
+body:not(.user-tab-mode) textarea:focus,
+body:not(.user-tab-mode) nav:focus,
+body:not(.user-tab-mode) section:focus,
+body:not(.user-tab-mode) li:focus,
+body:not(.user-tab-mode) span:focus {
+    outline: none;
+}
+
+
+body{
+    border: 0;
+    margin: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6076b7",endColorstr="#a4b3dd",GradientType=1);
+    background: rgb(82, 111, 197);
+    background: -moz-linear-gradient(180deg, rgb(82, 111, 197) 0%, rgb(137, 152, 192) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(82, 111, 197) 0%, rgb(137, 152, 192) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(82, 111, 197)), to(rgb(137, 152, 192))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(82, 111, 197) 0%, rgb(137, 152, 192) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(82, 111, 197) 0%, rgb(137, 152, 192) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(82, 111, 197) 0%, rgb(137, 152, 192) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(82, 111, 197) 0%, rgb(137, 152, 192) 100%) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.background-tr{
+    transition: background 5s linear 0s;
+}
+.timeset000{
+    background: rgb(5, 18, 46);
+    --a: rgb(5, 18, 46);
+    background: -moz-linear-gradient(180deg, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(5, 18, 46)), to(rgb(20, 18, 46))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+}
+.timeset001{
+    background: rgb(21, 23, 49);
+    --a: rgb(21, 23, 49);
+    background: -moz-linear-gradient(180deg, rgb(21, 23, 49) 0%, rgb(27, 22, 48) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(21, 23, 49) 0%, rgb(27, 22, 48) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(21, 23, 49)), to(rgb(27, 22, 48))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(21, 23, 49) 0%, rgb(27, 22, 48) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(21, 23, 49) 0%, rgb(27, 22, 48) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(21, 23, 49) 0%, rgb(27, 22, 48) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(21, 23, 49) 0%, rgb(27, 22, 48) 100%) no-repeat center center fixed;
+}
+.timeset002{
+    background: rgb(28, 31, 53);
+    --a: rgb(28, 31, 53);
+    background: -moz-linear-gradient(180deg, rgb(28, 31, 53) 0%, rgb(33, 28, 48) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(28, 31, 53) 0%, rgb(33, 28, 48) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(28, 31, 53)), to(rgb(33, 28, 48))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(28, 31, 53) 0%, rgb(33, 28, 48) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(28, 31, 53) 0%, rgb(33, 28, 48) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(28, 31, 53) 0%, rgb(33, 28, 48) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(28, 31, 53) 0%, rgb(33, 28, 48) 100%) no-repeat center center fixed;
+}
+.timeset003{
+    background: rgb(32, 39, 59);
+    --a: rgb(32, 39, 59);
+    background: -moz-linear-gradient(180deg, rgb(32, 39, 59) 0%, rgb(41, 30, 46) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(32, 39, 59) 0%, rgb(41, 30, 46) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(32, 39, 59)), to(rgb(41, 30, 46))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(32, 39, 59) 0%, rgb(41, 30, 46) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(32, 39, 59) 0%, rgb(41, 30, 46) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(32, 39, 59) 0%, rgb(41, 30, 46) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(32, 39, 59) 0%, rgb(41, 30, 46) 100%) no-repeat center center fixed;
+}
+.timeset004{
+    background: rgb(48, 52, 66);
+    --a: rgb(48, 52, 66);
+    background: -moz-linear-gradient(180deg, rgb(48, 52, 66) 0%, rgb(54, 39, 46) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(48, 52, 66) 0%, rgb(54, 39, 46) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(48, 52, 66)), to(rgb(54, 39, 46))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(48, 52, 66) 0%, rgb(54, 39, 46) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(48, 52, 66) 0%, rgb(54, 39, 46) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(48, 52, 66) 0%, rgb(54, 39, 46) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(48, 52, 66) 0%, rgb(54, 39, 46) 100%) no-repeat center center fixed;
+}
+.timeset005{
+    background: rgb(72, 70, 77);
+    --a: rgb(72, 70, 77);
+    background: -moz-linear-gradient(180deg, rgb(72, 70, 77) 0%, rgb(67, 54, 51) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(72, 70, 77) 0%, rgb(67, 54, 51) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(72, 70, 77)), to(rgb(67, 54, 51))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(72, 70, 77) 0%, rgb(67, 54, 51) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(72, 70, 77) 0%, rgb(67, 54, 51) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(72, 70, 77) 0%, rgb(67, 54, 51) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(72, 70, 77) 0%, rgb(67, 54, 51) 100%) no-repeat center center fixed;
+}
+.timeset006{
+    background: rgb(83, 80, 82);
+    --a: rgb(83, 80, 82);
+    background: -moz-linear-gradient(180deg, rgb(83, 80, 82) 0%, rgb(82, 56, 46) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(83, 80, 82) 0%, rgb(82, 56, 46) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(83, 80, 82)), to(rgb(82, 56, 46))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(83, 80, 82) 0%, rgb(82, 56, 46) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(83, 80, 82) 0%, rgb(82, 56, 46) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(83, 80, 82) 0%, rgb(82, 56, 46) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(83, 80, 82) 0%, rgb(82, 56, 46) 100%) no-repeat center center fixed;
+}
+.timeset007{
+    background: rgb(101, 94, 91);
+    --a: rgb(101, 94, 91);
+    background: -moz-linear-gradient(180deg, rgb(101, 94, 91) 0%, rgb(95, 63, 45) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(101, 94, 91) 0%, rgb(95, 63, 45) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(101, 94, 91)), to(rgb(95, 63, 45))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(101, 94, 91) 0%, rgb(95, 63, 45) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(101, 94, 91) 0%, rgb(95, 63, 45) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(101, 94, 91) 0%, rgb(95, 63, 45) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(101, 94, 91) 0%, rgb(95, 63, 45) 100%) no-repeat center center fixed;
+}
+.timeset008{
+    background: rgb(119, 108, 100);
+    --a: rgb(119, 108, 100);
+    background: -moz-linear-gradient(180deg, rgb(119, 108, 100) 0%, rgb(109, 72, 47) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(119, 108, 100) 0%, rgb(109, 72, 47) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(119, 108, 100)), to(rgb(109, 72, 47))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(119, 108, 100) 0%, rgb(109, 72, 47) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(119, 108, 100) 0%, rgb(109, 72, 47) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(119, 108, 100) 0%, rgb(109, 72, 47) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(119, 108, 100) 0%, rgb(109, 72, 47) 100%) no-repeat center center fixed;
+}
+.timeset009{
+    background: rgb(135, 126, 111);
+    --a: rgb(135, 126, 111);
+    background: -moz-linear-gradient(180deg, rgb(135, 126, 111) 0%, rgb(116, 88, 57) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(135, 126, 111) 0%, rgb(116, 88, 57) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(135, 126, 111)), to(rgb(116, 88, 57))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(135, 126, 111) 0%, rgb(116, 88, 57) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(135, 126, 111) 0%, rgb(116, 88, 57) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(135, 126, 111) 0%, rgb(116, 88, 57) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(135, 126, 111) 0%, rgb(116, 88, 57) 100%) no-repeat center center fixed;
+}
+.timeset0010{
+    background: rgb(158, 146, 123);
+    --a: rgb(158, 146, 123);
+    background: -moz-linear-gradient(180deg, rgb(158, 146, 123) 0%, rgb(134, 101, 60) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(158, 146, 123) 0%, rgb(134, 101, 60) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(158, 146, 123)), to(rgb(134, 101, 60))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(158, 146, 123) 0%, rgb(134, 101, 60) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(158, 146, 123) 0%, rgb(134, 101, 60) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(158, 146, 123) 0%, rgb(134, 101, 60) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(158, 146, 123) 0%, rgb(134, 101, 60) 100%) no-repeat center center fixed;
+}
+.timeset0011{
+    background: rgb(185, 170, 137);
+    --a: rgb(185, 170, 137);
+    background: -moz-linear-gradient(180deg, rgb(185, 170, 137) 0%, rgb(154, 115, 63) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(185, 170, 137) 0%, rgb(154, 115, 63) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(185, 170, 137)), to(rgb(154, 115, 63))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(185, 170, 137) 0%, rgb(154, 115, 63) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(185, 170, 137) 0%, rgb(154, 115, 63) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(185, 170, 137) 0%, rgb(154, 115, 63) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(185, 170, 137) 0%, rgb(154, 115, 63) 100%) no-repeat center center fixed;
+}
+.timeset0012{
+    background: rgb(210, 192, 152);
+    --a: rgb(210, 192, 152);
+    background: -moz-linear-gradient(180deg, rgb(210, 192, 152) 0%, rgb(175, 130, 68) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(210, 192, 152) 0%, rgb(175, 130, 68) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(210, 192, 152)), to(rgb(175, 130, 68))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(210, 192, 152) 0%, rgb(175, 130, 68) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(210, 192, 152) 0%, rgb(175, 130, 68) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(210, 192, 152) 0%, rgb(175, 130, 68) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(210, 192, 152) 0%, rgb(175, 130, 68) 100%) no-repeat center center fixed;
+}
+.timeset0013{
+    background: rgb(205, 187, 157);
+    --a: rgb(205, 187, 157);
+    background: -moz-linear-gradient(180deg, rgb(205, 187, 157) 0%, rgb(195, 137, 75) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(205, 187, 157) 0%, rgb(195, 137, 75) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(205, 187, 157)), to(rgb(195, 137, 75))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(205, 187, 157) 0%, rgb(195, 137, 75) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(205, 187, 157) 0%, rgb(195, 137, 75) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(205, 187, 157) 0%, rgb(195, 137, 75) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(205, 187, 157) 0%, rgb(195, 137, 75) 100%) no-repeat center center fixed;
+}
+.timeset0014{
+    background: rgb(183, 181, 168);
+    --a: rgb(183, 181, 168);
+    background: -moz-linear-gradient(180deg, rgb(183, 181, 168) 0%, rgb(195, 150, 101) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(183, 181, 168) 0%, rgb(195, 150, 101) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(183, 181, 168)), to(rgb(195, 150, 101))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(183, 181, 168) 0%, rgb(195, 150, 101) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(183, 181, 168) 0%, rgb(195, 150, 101) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(183, 181, 168) 0%, rgb(195, 150, 101) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(183, 181, 168) 0%, rgb(195, 150, 101) 100%) no-repeat center center fixed;
+}
+.timeset0015{
+    background: rgb(170, 178, 175);
+    --a: rgb(170, 178, 175);
+    background: -moz-linear-gradient(180deg, rgb(170, 178, 175) 0%, rgb(196, 159, 119) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(170, 178, 175) 0%, rgb(196, 159, 119) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(170, 178, 175)), to(rgb(196, 159, 119))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(170, 178, 175) 0%, rgb(196, 159, 119) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(170, 178, 175) 0%, rgb(196, 159, 119) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(170, 178, 175) 0%, rgb(196, 159, 119) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(170, 178, 175) 0%, rgb(196, 159, 119) 100%) no-repeat center center fixed;
+}
+.timeset0016{
+    background: rgb(157, 174, 180);
+    --a: rgb(157, 174, 180);
+    background: -moz-linear-gradient(180deg, rgb(157, 174, 180) 0%, rgb(197, 166, 133) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(157, 174, 180) 0%, rgb(197, 166, 133) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(157, 174, 180)), to(rgb(197, 166, 133))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(157, 174, 180) 0%, rgb(197, 166, 133) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(157, 174, 180) 0%, rgb(197, 166, 133) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(157, 174, 180) 0%, rgb(197, 166, 133) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(157, 174, 180) 0%, rgb(197, 166, 133) 100%) no-repeat center center fixed;
+}
+.timeset0017{
+    background: rgb(144, 171, 187);
+    --a: rgb(144, 171, 187);
+    background: -moz-linear-gradient(180deg, rgb(144, 171, 187) 0%, rgb(197, 174, 148) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(144, 171, 187) 0%, rgb(197, 174, 148) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(144, 171, 187)), to(rgb(197, 174, 148))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(144, 171, 187) 0%, rgb(197, 174, 148) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(144, 171, 187) 0%, rgb(197, 174, 148) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(144, 171, 187) 0%, rgb(197, 174, 148) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(144, 171, 187) 0%, rgb(197, 174, 148) 100%) no-repeat center center fixed;
+}
+.timeset0018{
+    background: rgb(124, 165, 196);
+    --a: rgb(124, 165, 196);
+    background: -moz-linear-gradient(180deg, rgb(124, 165, 196) 0%, rgb(198, 186, 173) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(124, 165, 196) 0%, rgb(198, 186, 173) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(124, 165, 196)), to(rgb(198, 186, 173))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(124, 165, 196) 0%, rgb(198, 186, 173) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(124, 165, 196) 0%, rgb(198, 186, 173) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(124, 165, 196) 0%, rgb(198, 186, 173) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(124, 165, 196) 0%, rgb(198, 186, 173) 100%) no-repeat center center fixed;
+}
+.timeset0019{
+    background: rgb(103, 161, 206);
+    --a: rgb(103, 161, 206);
+    background: -moz-linear-gradient(180deg, rgb(103, 161, 206) 0%, rgb(198, 199, 200) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(103, 161, 206) 0%, rgb(198, 199, 200) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(103, 161, 206)), to(rgb(198, 199, 200))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(103, 161, 206) 0%, rgb(198, 199, 200) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(103, 161, 206) 0%, rgb(198, 199, 200) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(103, 161, 206) 0%, rgb(198, 199, 200) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(103, 161, 206) 0%, rgb(198, 199, 200) 100%) no-repeat center center fixed;
+}
+.timeset0020{
+    background: rgb(102, 160, 206);
+    --a: rgb(102, 160, 206);
+    background: -moz-linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(200, 200, 201) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(200, 200, 201) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(102, 160, 206)), to(rgb(200, 200, 201))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(200, 200, 201) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(200, 200, 201) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(200, 200, 201) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(200, 200, 201) 100%) no-repeat center center fixed;
+}
+.timeset0021{
+    background: rgb(103, 160, 205);
+    --a: rgb(103, 160, 205);
+    background: -moz-linear-gradient(180deg, rgb(103, 160, 205) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(103, 160, 205) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(103, 160, 205)), to(rgb(197, 198, 200))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(103, 160, 205) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(103, 160, 205) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(103, 160, 205) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(103, 160, 205) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+}
+.timeset0022{
+    background: rgb(105, 162, 206);
+    --a: rgb(105, 162, 206);
+    background: -moz-linear-gradient(180deg, rgb(105, 162, 206) 0%, rgb(199, 199, 200) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(105, 162, 206) 0%, rgb(199, 199, 200) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(105, 162, 206)), to(rgb(199, 199, 200))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(105, 162, 206) 0%, rgb(199, 199, 200) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(105, 162, 206) 0%, rgb(199, 199, 200) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(105, 162, 206) 0%, rgb(199, 199, 200) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(105, 162, 206) 0%, rgb(199, 199, 200) 100%) no-repeat center center fixed;
+}
+.timeset0023{
+    background: rgb(102, 160, 206);
+    --a: rgb(102, 160, 206);
+    background: -moz-linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(102, 160, 206)), to(rgb(197, 198, 200))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+}
+.timeset0024{
+    background: rgb(102, 160, 206);
+    --a: rgb(102, 160, 206);
+    background: -moz-linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(102, 160, 206)), to(rgb(197, 198, 200))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+}
+.timeset0025{
+    background: rgb(102, 160, 206);
+    --a: rgb(102, 160, 206);
+    background: -moz-linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(102, 160, 206)), to(rgb(197, 198, 200))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(102, 160, 206) 0%, rgb(197, 198, 200) 100%) no-repeat center center fixed;
+}
+.timeset0026{
+    background: rgb(106, 154, 198);
+    --a: rgb(106, 154, 198);
+    background: -moz-linear-gradient(180deg, rgb(106, 154, 198) 0%, rgb(201, 193, 192) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(106, 154, 198) 0%, rgb(201, 193, 192) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(106, 154, 198)), to(rgb(201, 193, 192))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(106, 154, 198) 0%, rgb(201, 193, 192) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(106, 154, 198) 0%, rgb(201, 193, 192) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(106, 154, 198) 0%, rgb(201, 193, 192) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(106, 154, 198) 0%, rgb(201, 193, 192) 100%) no-repeat center center fixed;
+}
+.timeset0027{
+    background: rgb(109, 151, 195);
+    --a: rgb(109, 151, 195);
+    background: -moz-linear-gradient(180deg, rgb(109, 151, 195) 0%, rgb(204, 191, 190) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(109, 151, 195) 0%, rgb(204, 191, 190) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(109, 151, 195)), to(rgb(204, 191, 190))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(109, 151, 195) 0%, rgb(204, 191, 190) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(109, 151, 195) 0%, rgb(204, 191, 190) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(109, 151, 195) 0%, rgb(204, 191, 190) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(109, 151, 195) 0%, rgb(204, 191, 190) 100%) no-repeat center center fixed;
+}
+.timeset0028{
+    background: rgb(112, 149, 192);
+    --a: rgb(112, 149, 192);
+    background: -moz-linear-gradient(180deg, rgb(112, 149, 192) 0%, rgb(204, 187, 185) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(112, 149, 192) 0%, rgb(204, 187, 185) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(112, 149, 192)), to(rgb(204, 187, 185))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(112, 149, 192) 0%, rgb(204, 187, 185) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(112, 149, 192) 0%, rgb(204, 187, 185) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(112, 149, 192) 0%, rgb(204, 187, 185) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(112, 149, 192) 0%, rgb(204, 187, 185) 100%) no-repeat center center fixed;
+}
+.timeset0029{
+    background: rgb(114, 146, 189);
+    --a: rgb(114, 146, 189);
+    background: -moz-linear-gradient(180deg, rgb(114, 146, 189) 0%, rgb(206, 185, 181) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(114, 146, 189) 0%, rgb(206, 185, 181) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(114, 146, 189)), to(rgb(206, 185, 181))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(114, 146, 189) 0%, rgb(206, 185, 181) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(114, 146, 189) 0%, rgb(206, 185, 181) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(114, 146, 189) 0%, rgb(206, 185, 181) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(114, 146, 189) 0%, rgb(206, 185, 181) 100%) no-repeat center center fixed;
+}
+.timeset0030{
+    background: rgb(116, 142, 184);
+    --a: rgb(116, 142, 184);
+    background: -moz-linear-gradient(180deg, rgb(116, 142, 184) 0%, rgb(208, 182, 177) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(116, 142, 184) 0%, rgb(208, 182, 177) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(116, 142, 184)), to(rgb(208, 182, 177))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(116, 142, 184) 0%, rgb(208, 182, 177) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(116, 142, 184) 0%, rgb(208, 182, 177) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(116, 142, 184) 0%, rgb(208, 182, 177) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(116, 142, 184) 0%, rgb(208, 182, 177) 100%) no-repeat center center fixed;
+}
+.timeset0031{
+    background: rgb(119, 139, 180);
+    --a: rgb(119, 139, 180);
+    background: -moz-linear-gradient(180deg, rgb(119, 139, 180) 0%, rgb(208, 177, 173) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(119, 139, 180) 0%, rgb(208, 177, 173) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(119, 139, 180)), to(rgb(208, 177, 173))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(119, 139, 180) 0%, rgb(208, 177, 173) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(119, 139, 180) 0%, rgb(208, 177, 173) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(119, 139, 180) 0%, rgb(208, 177, 173) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(119, 139, 180) 0%, rgb(208, 177, 173) 100%) no-repeat center center fixed;
+}
+.timeset0032{
+    background: rgb(122, 136, 177);
+    --a: rgb(122, 136, 177);
+    background: -moz-linear-gradient(180deg, rgb(122, 136, 177) 0%, rgb(209, 174, 168) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(122, 136, 177) 0%, rgb(209, 174, 168) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(122, 136, 177)), to(rgb(209, 174, 168))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(122, 136, 177) 0%, rgb(209, 174, 168) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(122, 136, 177) 0%, rgb(209, 174, 168) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(122, 136, 177) 0%, rgb(209, 174, 168) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(122, 136, 177) 0%, rgb(209, 174, 168) 100%) no-repeat center center fixed;
+}
+.timeset0033{
+    background: rgb(127, 129, 168);
+    --a: rgb(127, 129, 168);
+    background: -moz-linear-gradient(180deg, rgb(127, 129, 168) 0%, rgb(214, 168, 159) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(127, 129, 168) 0%, rgb(214, 168, 159) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(127, 129, 168)), to(rgb(214, 168, 159))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(127, 129, 168) 0%, rgb(214, 168, 159) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(127, 129, 168) 0%, rgb(214, 168, 159) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(127, 129, 168) 0%, rgb(214, 168, 159) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(127, 129, 168) 0%, rgb(214, 168, 159) 100%) no-repeat center center fixed;
+}
+.timeset0034{
+    background: rgb(135, 120, 156);
+    --a: rgb(135, 120, 156);
+    background: -moz-linear-gradient(180deg, rgb(135, 120, 156) 0%, rgb(218, 158, 147) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(135, 120, 156) 0%, rgb(218, 158, 147) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(135, 120, 156)), to(rgb(218, 158, 147))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(135, 120, 156) 0%, rgb(218, 158, 147) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(135, 120, 156) 0%, rgb(218, 158, 147) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(135, 120, 156) 0%, rgb(218, 158, 147) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(135, 120, 156) 0%, rgb(218, 158, 147) 100%) no-repeat center center fixed;
+}
+.timeset0035{
+    background: rgb(142, 112, 147);
+    --a: rgb(142, 112, 147);
+    background: -moz-linear-gradient(180deg, rgb(142, 112, 147) 0%, rgb(222, 150, 137) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(142, 112, 147) 0%, rgb(222, 150, 137) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(142, 112, 147)), to(rgb(222, 150, 137))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(142, 112, 147) 0%, rgb(222, 150, 137) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(142, 112, 147) 0%, rgb(222, 150, 137) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(142, 112, 147) 0%, rgb(222, 150, 137) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(142, 112, 147) 0%, rgb(222, 150, 137) 100%) no-repeat center center fixed;
+}
+.timeset0036{
+    background: rgb(144, 109, 143);
+    --a: rgb(144, 109, 143);
+    background: -moz-linear-gradient(180deg, rgb(144, 109, 143) 0%, rgb(225, 148, 132) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(144, 109, 143) 0%, rgb(225, 148, 132) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(144, 109, 143)), to(rgb(225, 148, 132))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(144, 109, 143) 0%, rgb(225, 148, 132) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(144, 109, 143) 0%, rgb(225, 148, 132) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(144, 109, 143) 0%, rgb(225, 148, 132) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(144, 109, 143) 0%, rgb(225, 148, 132) 100%) no-repeat center center fixed;
+}
+.timeset0037{
+    background: rgb(148, 102, 135);
+    --a: rgb(148, 102, 135);
+    background: -moz-linear-gradient(180deg, rgb(148, 102, 135) 0%, rgb(227, 142, 124) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(148, 102, 135) 0%, rgb(227, 142, 124) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(148, 102, 135)), to(rgb(227, 142, 124))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(148, 102, 135) 0%, rgb(227, 142, 124) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(148, 102, 135) 0%, rgb(227, 142, 124) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(148, 102, 135) 0%, rgb(227, 142, 124) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(148, 102, 135) 0%, rgb(227, 142, 124) 100%) no-repeat center center fixed;
+}
+.timeset0038{
+    background: rgb(163, 85, 114);
+    --a: rgb(163, 85, 114);
+    background: -moz-linear-gradient(180deg, rgb(163, 85, 114) 0%, rgb(235, 124, 101) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(163, 85, 114) 0%, rgb(235, 124, 101) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(163, 85, 114)), to(rgb(235, 124, 101))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(163, 85, 114) 0%, rgb(235, 124, 101) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(163, 85, 114) 0%, rgb(235, 124, 101) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(163, 85, 114) 0%, rgb(235, 124, 101) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(163, 85, 114) 0%, rgb(235, 124, 101) 100%) no-repeat center center fixed;
+}
+.timeset0039{
+    background: rgb(169, 79, 106);
+    --a: rgb(169, 79, 106);
+    background: -moz-linear-gradient(180deg, rgb(169, 79, 106) 0%, rgb(239, 117, 92) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(169, 79, 106) 0%, rgb(239, 117, 92) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(169, 79, 106)), to(rgb(239, 117, 92))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(169, 79, 106) 0%, rgb(239, 117, 92) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(169, 79, 106) 0%, rgb(239, 117, 92) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(169, 79, 106) 0%, rgb(239, 117, 92) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(169, 79, 106) 0%, rgb(239, 117, 92) 100%) no-repeat center center fixed;
+}
+.timeset0040{
+    background: rgb(182, 61, 84);
+    --a: rgb(182, 61, 84);
+    background: -moz-linear-gradient(180deg, rgb(182, 61, 84) 0%, rgb(248, 101, 70) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(182, 61, 84) 0%, rgb(248, 101, 70) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(182, 61, 84)), to(rgb(248, 101, 70))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(182, 61, 84) 0%, rgb(248, 101, 70) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(182, 61, 84) 0%, rgb(248, 101, 70) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(182, 61, 84) 0%, rgb(248, 101, 70) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(182, 61, 84) 0%, rgb(248, 101, 70) 100%) no-repeat center center fixed;
+}
+.timeset0041{
+    background: rgb(187, 56, 77);
+    --a: rgb(187, 56, 77);
+    background: -moz-linear-gradient(180deg, rgb(187, 56, 77) 0%, rgb(251, 94, 62) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(187, 56, 77) 0%, rgb(251, 94, 62) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(187, 56, 77)), to(rgb(251, 94, 62))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(187, 56, 77) 0%, rgb(251, 94, 62) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(187, 56, 77) 0%, rgb(251, 94, 62) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(187, 56, 77) 0%, rgb(251, 94, 62) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(187, 56, 77) 0%, rgb(251, 94, 62) 100%) no-repeat center center fixed;
+}
+.timeset0042{
+    background: rgb(139, 39, 62);
+    --a: rgb(139, 39, 62);
+    background: -moz-linear-gradient(180deg, rgb(139, 39, 62) 0%, rgb(187, 68, 51) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(139, 39, 62) 0%, rgb(187, 68, 51) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(139, 39, 62)), to(rgb(187, 68, 51))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(139, 39, 62) 0%, rgb(187, 68, 51) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(139, 39, 62) 0%, rgb(187, 68, 51) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(139, 39, 62) 0%, rgb(187, 68, 51) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(139, 39, 62) 0%, rgb(187, 68, 51) 100%) no-repeat center center fixed;
+}
+.timeset0043{
+    background: rgb(87, 31, 56);
+    --a: rgb(87, 31, 56);
+    background: -moz-linear-gradient(180deg, rgb(87, 31, 56) 0%, rgb(123, 48, 49) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(87, 31, 56) 0%, rgb(123, 48, 49) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(87, 31, 56)), to(rgb(123, 48, 49))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(87, 31, 56) 0%, rgb(123, 48, 49) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(87, 31, 56) 0%, rgb(123, 48, 49) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(87, 31, 56) 0%, rgb(123, 48, 49) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(87, 31, 56) 0%, rgb(123, 48, 49) 100%) no-repeat center center fixed;
+}
+.timeset0044{
+    background: rgb(65, 28, 53);
+    --a: rgb(65, 28, 53);
+    background: -moz-linear-gradient(180deg, rgb(65, 28, 53) 0%, rgb(94, 40, 48) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(65, 28, 53) 0%, rgb(94, 40, 48) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(65, 28, 53)), to(rgb(94, 40, 48))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(65, 28, 53) 0%, rgb(94, 40, 48) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(65, 28, 53) 0%, rgb(94, 40, 48) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(65, 28, 53) 0%, rgb(94, 40, 48) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(65, 28, 53) 0%, rgb(94, 40, 48) 100%) no-repeat center center fixed;
+}
+.timeset0045{
+    background: rgb(66, 28, 54);
+    --a: rgb(66, 28, 54);
+    background: -moz-linear-gradient(180deg, rgb(66, 28, 54) 0%, rgb(94, 39, 48) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(66, 28, 54) 0%, rgb(94, 39, 48) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(66, 28, 54)), to(rgb(94, 39, 48))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(66, 28, 54) 0%, rgb(94, 39, 48) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(66, 28, 54) 0%, rgb(94, 39, 48) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(66, 28, 54) 0%, rgb(94, 39, 48) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(66, 28, 54) 0%, rgb(94, 39, 48) 100%) no-repeat center center fixed;
+}
+.timeset0046{
+    background: rgb(39, 23, 50);
+    --a: rgb(39, 23, 50);
+    background: -moz-linear-gradient(180deg, rgb(39, 23, 50) 0%, rgb(62, 30, 47) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(39, 23, 50) 0%, rgb(62, 30, 47) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(39, 23, 50)), to(rgb(62, 30, 47))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(39, 23, 50) 0%, rgb(62, 30, 47) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(39, 23, 50) 0%, rgb(62, 30, 47) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(39, 23, 50) 0%, rgb(62, 30, 47) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(39, 23, 50) 0%, rgb(62, 30, 47) 100%) no-repeat center center fixed;
+}
+.timeset0047{
+    background: rgb(14, 19, 47);
+    --a: rgb(14, 19, 47);
+    background: -moz-linear-gradient(180deg, rgb(14, 19, 47) 0%, rgb(30, 21, 45) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(14, 19, 47) 0%, rgb(30, 21, 45) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(14, 19, 47)), to(rgb(30, 21, 45))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(14, 19, 47) 0%, rgb(30, 21, 45) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(14, 19, 47) 0%, rgb(30, 21, 45) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(14, 19, 47) 0%, rgb(30, 21, 45) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(14, 19, 47) 0%, rgb(30, 21, 45) 100%) no-repeat center center fixed;
+}
+.timeset0048{
+    background: rgb(5, 18, 46);
+    --a: rgb(5, 18, 46);
+    background: -moz-linear-gradient(180deg, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: -webkit-linear-gradient(180deg, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(5, 18, 46)), to(rgb(20, 18, 46))) no-repeat center center fixed;
+    background: -webkit-linear-gradient(top, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: -moz-linear-gradient(top, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: -o-linear-gradient(top, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+    background: linear-gradient(180deg, rgb(5, 18, 46) 0%, rgb(20, 18, 46) 100%) no-repeat center center fixed;
+}
+
+/*Phone navbar*/
+nav {
+    background: rgba(71, 71, 71, 0.753);
+    color: rgb(214, 214, 214);
+    position: fixed;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0 10px 0;
+    padding: 10px 0 -webkit-calc(10px + env(safe-area-inset-bottom)) 0;
+    padding: 10px 0 -moz-calc(10px + env(safe-area-inset-bottom)) 0;
+    padding: 10px 0 calc(10px + env(safe-area-inset-bottom)) 0;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 100;
+    -webkit-box-shadow: 
+        0px 17px 0px 0px rgba(71, 71, 71, 0.753),
+        0 25px 45px rgba(0,0,0,0.1);
+       -moz-box-shadow: 
+            0px 17px 0px 0px rgba(71, 71, 71, 0.753),
+            0 25px 45px rgba(0,0,0,0.1);
+            box-shadow: 
+                0px 17px 0px 0px rgba(71, 71, 71, 0.753),
+                0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(145, 145, 145, 0.5);
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())){
+    nav {
+        background: rgba(71, 71, 71, 0.753);
+        -webkit-backdrop-filter: 
+            blur(8.32423px)
+        ;
+                backdrop-filter: 
+            blur(8.32423px)
+        ;
+        color: rgb(214, 214, 214);
+        position: fixed;
+        bottom: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 10px 0 10px 0;
+        padding: 10px 0 -webkit-calc(10px + env(safe-area-inset-bottom)) 0;
+        padding: 10px 0 -moz-calc(10px + env(safe-area-inset-bottom)) 0;
+        padding: 10px 0 calc(10px + env(safe-area-inset-bottom)) 0;
+        font-family: 'Open Sans', sans-serif;
+        z-index: 100;
+        border: 1px solid rgba(145, 145, 145, 0.5);
+        border-right: 0px;
+        border-bottom: 0px;
+        border-left: 0px;
+    }
+}
+.navelement-phone {
+    padding: 2px;
+    /* margin: 0; */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+            border-radius: 7px;
+    width: 60px;
+    cursor: pointer;
+}
+.navelement-phone>p{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+.navelement-phone-here{
+    background-color: rgb(92, 158, 109);
+    margin: 0 5px 0 5px;
+    width: 100px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+       -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+            box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2) 
+}
+.navelement-phone-here>p{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())){
+    .navelement-phone-here{
+        background-color: rgba(2, 207, 128, 0.637);
+        -webkit-backdrop-filter: 
+            blur(2px)
+        ;
+                backdrop-filter: 
+            blur(2px)
+        ;
+        margin: 0 5px 0 5px;
+        -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+           -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2);
+                box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.14) , 0px 1px 10px 0px rgba(0,0,0,0.12) , 0px 2px 4px -1px rgba(0,0,0,0.2) 
+    }
+}
+
+/*weather body*/
+.body-content_{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/*temperature*/
+.timedisplay{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 40px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 333px;
+}
+.temperature-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0 7px 0;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+.temperature-value{
+    font-size: 80px;
+    /* font-weight: bold; */
+}
+.temperature-other-options{
+    margin: 0 0 0 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.temp-btn{
+    background: #5a5a5ab8;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+    color: inherit;
+    margin: 6px;
+    font-size: 17px;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+    opacity: 0.7;
+    padding: 2px 13px 2px 13px;
+}
+
+.temp-btn-active{
+    font-size: 50px;
+    padding: 0 8px 0 0;
+    opacity: 1;
+    background: none;
+    margin: 0;
+}
+.msg-block{
+    color: #e2e7eb;
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5px 0 5px 0;
+}
+.msg-block>i{
+    margin: 0 10px 0 0;
+}
+.title-0 {
+    color: rgb(218, 218, 218);
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+/*table weather content*/
+.table-block{
+    list-style: none;
+    margin: 20px 0 20px 0;
+    padding: 0;
+    -webkit-border-radius: 11px;
+       -moz-border-radius: 11px;
+            border-radius: 11px;
+    background: rgba(53, 53, 53, 0.63);
+    border: 1px solid rgba(212, 212, 212, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@supports ((-webkit-backdrop-filter: blur()) or (backdrop-filter: blur())){
+    .table-block{
+        -webkit-backdrop-filter: 
+            blur(7.3231px)
+        ;
+                backdrop-filter: 
+            blur(7.3231px)
+        ;
+        list-style: none;
+        margin: 20px 0 20px 0;
+        padding: 0;
+        -webkit-border-radius: 11px;
+           -moz-border-radius: 11px;
+                border-radius: 11px;
+    }
+}
+.table-block>li{
+    color:rgb(218, 218, 218);
+    font-family: 'Roboto', sans-serif;
+    padding: 9px 20px 9px 20px;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.table-block>li:nth-last-of-type(1) {
+    padding: 9px 20px 15px 20px;
+}
+.table-block>li:nth-of-type(1) {
+    width: -webkit-calc(var(--setView) - 10);
+    width: -moz-calc(var(--setView) - 10);
+    width: calc(var(--setView) - 10);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+}
+.title-journal{
+    padding: 17px 60px 17px 60px;
+    -webkit-border-radius: 11px 11px 0 0;
+       -moz-border-radius: 11px 11px 0 0;
+            border-radius: 11px 11px 0 0;
+    background: transparent;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    border-bottom: 4px dotted white;
+}
+.table-block>li>.subgenere-label{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
+.table-block>li>.subgenere-label>i{
+    margin: 0 5.123px 0 5.123px;
+}
+.live-on-off-btn-class{
+    color: inherit;
+    background: none;
+    border: 0;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    margin: 0 0 0 10px;
+}
+/*photo expose*/
+.photo-scr-expose{
+    width: 100%;
+    height: 333px;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 10px 0 10px 0;
+}
+/*announcements*/
+.tablon-de-anuncios{
+    margin: 0 0 100px 0;
+    margin: 0 0 calc(100px + env(safe-area-inset-bottom)) 0;
+    width: var(--setView);
+}
+.titol-announcements{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 21.22px;
+    font-weight: 800;
+}
+.tile-widget{
+    background: rgb(166, 238, 234);
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+}
+.xl-size-wed{
+    width: 100%;
+    height: 333px;
+    margin: 10px 0 10px 0;
+}
+.l-size-wed{
+    width: 100%;
+    height: 166.5px;
+    height: -webkit-calc(333px / 2);
+    height: -moz-calc(333px / 2);
+    height: calc(333px / 2);
+    margin: 10px 0 10px 0;
+}
+@media screen and (min-width: 700px) {
+    .table-block {
+        width: 300px;
+    }
+    .title-journal{
+        padding: 17px 14% 17px 14%;
+    }
+    .timedisplay {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: auto;
+    }
+    .blocky-thing{
+        width: 333px;
+    }
+    .tablon-de-anuncios{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 633px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+           -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+           -moz-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+        justify-items: center;
+    }
+    .photo-scr-expose{
+        width: 300px;
+        height: 300px;
+    }
+    .photo-exposer{
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+           -moz-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .l-size-wed {
+        width: 300px;
+        height: 150px;
+        height: -webkit-calc(300px / 2);
+        height: -moz-calc(300px / 2);
+        height: calc(300px / 2);
+        margin: 10px 0 10px 0;
+    }
+    .xl-size-wed {
+        width: 300px;
+        height: 300px;
+        margin: 10px 0 10px 0;
+    }
+}
+@media screen and (orientation: landscape) {
+    .navelement-phone-here {
+        margin: 0 5px 0 5px;
+        width: 100px;
+        width: -webkit-calc(10px + auto);
+        width: -moz-calc(10px + auto);
+        width: calc(10px + auto);
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding: 7px;
+    }
+    .navelement-phone-here>p{
+        margin: 0;
+        padding: 0 0 0 4px;
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    .body-content_{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+           -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+           -moz-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+                padding: 64px 5% 0 5%;
+                padding: 64px calc(5% + env(safe-area-inset-right)) 0 calc(5% + env(safe-area-inset-left));
+        animation: movethebody_to_ajust_the_super_duper_and_overrated_animation_R 0.8s cubic-bezier(0.87,-0.43, 0.32, 1.3) 0s 1;
+    }
+    .timedisplay{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .tablon-de-anuncios {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: auto;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+           -moz-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        margin: 0;
+        transition: 0.8s cubic-bezier(0.87,-0.43, 0.32, 1.3);
+    }
+    .photo-scr-expose{
+        width: 333px;
+        height: 333px;
+    }
+    .titol-announcements{
+        text-align: right;
+        width: 100%;
+    }
+    .ads-expose-container{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .xl-size-wed{
+        width: 333px;
+        height: 333px;
+    }
+    .l-size-wed {
+        width: 333px;
+        height: 166.5px;
+        height: -webkit-calc(333px / 2);
+        height: -moz-calc(333px / 2);
+        height: calc(333px / 2);
+    }
+    .table-block {
+        width: 100%;
+    }
+    nav{
+        animation: phonehide 0.8s cubic-bezier(0.87,-0.43, 0.32, 1.3) 0s 1;
+        transform: translateY(0);
+        border: 0;
+        border-right: 0px;
+        border-bottom: 1px solid rgba(145, 145, 145, 0.5);
+        border-left: 0px;
+        top: 0;
+        bottom: unset;
+        box-shadow: 0px -17px 0px 0px rgba(71, 71, 71, 0.753);
+    }
+
+    @media screen and (orientation: landscape) {
+        .navelement-phone{
+            margin: 0 5px 0 5px;
+            width: 100px;
+            width: -webkit-calc(10px + auto);
+            width: -moz-calc(10px + auto);
+            width: calc(10px + auto);
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+               -moz-box-orient: horizontal;
+               -moz-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            padding: 7px;
+        }
+        .navelement-phone>p{
+            display: block;
+            padding: 0 0 0 4px
+        }
+    }
+}
+@media screen and (min-width: 1270px) {
+    .tablon-de-anuncios{    
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+           -moz-box-orient: horizontal;
+           -moz-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+           -moz-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
+    }
+    .photo-exposer { 
+        margin: 0 30px 0 0;
+    }
+    .photo-scr-expose{
+        width: 400px;
+        height: 400px;
+    }
+    .titol-announcements{
+        text-align: center;
+    }
+}
+
+/*keyframes*/
+/* @keyframes phonehide {
+    0% {
+        box-shadow: 0px 17px 0px 0px rgba(71, 71, 71, 0.753);
+        top: unset;
+        bottom: 0;
+        transform: translateY(0);
+        border: 0px;
+    }
+    10% {
+        box-shadow: 0px 17px 0px 0px rgba(71, 71, 71, 0.753);
+        top: unset;
+        bottom: 0;
+        transform: translateY(0);
+        border: 0px;
+    }
+    50% {
+        box-shadow: 0px 17px 0px 0px rgba(71, 71, 71, 0.753);
+        top: unset;
+        bottom: 0;
+        transform: translateY(100%);
+        border: 0px;
+    }
+    51% {
+        box-shadow: 0px -17px 0px 0px rgba(71, 71, 71, 0.753);
+        top: 0;
+        bottom: unset;
+        transform: translateY(-200%);
+        border: 0px;
+    }
+    100%{
+        box-shadow: 0px -17px 0px 0px rgba(71, 71, 71, 0.753);
+        top: 0;
+        bottom: unset;
+        transform: translateY(0);
+        border: 0px;
+        border-bottom: 1px solid rgba(145, 145, 145, 0.5);
+    }
+} */
+
+/* @keyframes movethebody_to_ajust_the_super_duper_and_overrated_animation_R {
+    0% {
+        padding: 0 5% 0 5%;
+        padding: 0 calc(5% + env(safe-area-inset-right)) 0 calc(5% + env(safe-area-inset-left));
+    }
+    51%{
+        padding: 0 5% 0 5%;
+        padding: 0 calc(5% + env(safe-area-inset-right)) 0 calc(5% + env(safe-area-inset-left));
+    }
+    100%{
+        padding: 64px 5% 0 5%;
+        padding: 64px calc(5% + env(safe-area-inset-right)) 0 calc(5% + env(safe-area-inset-left));
+    }
+} */
+
+/*WIDGETS*/
+.tile-widget:nth-of-type(1) {
+    background: url(/images/placeholders/placeholder_largewidget_1.svg);
+    background-size: 100% 100%;
+}
+.tile-widget:nth-of-type(2) {
+    background: url(/images/placeholders/placeholder_medwidget_1.svg);
+    background-size: 100% 100%;
+}
+.tile-widget:nth-of-type(3) {
+    background: url(/images/placeholders/placeholder_medwidget_2.svg);
+    background-size: 100% 100%;
+}
