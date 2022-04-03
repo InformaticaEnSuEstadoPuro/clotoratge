@@ -1,6 +1,5 @@
 startTime();
 function startTime(){
-    var d = null;
     d = new Date(); 
     const hour = d.getHours();
     const minute = d.getMinutes();
@@ -336,9 +335,73 @@ function startTime(){
         var accent = getComputedStyle(document.getElementsByClassName("timeset"+ whatthebackground +"")[0]).getPropertyValue('--a');
         document.querySelector("meta[name=theme-color]").setAttribute("content", accent);
     }
+    if(hour >= 19 || hour <= 7){
+        if(!tryDarkTiles()){
+            turnTheSuperDarkModeMaestroForWidgetsTiles();
+        }
+    }
+    if(hour >= 7 || hour <= 19){
+/*         if(tryDarkTiles()){
+            turnTheSuperLightModeMaestroForWidgetsTiles();
+        } */
+    }
     activateTransition();
-    setTimeout(startTime, 500);
+    setTimeout(startTime, 1000);
 }
 function activateTransition(){
     document.getElementsByTagName("body")[0].classList.add("background-tr");
+}
+
+function turnTheSuperDarkModeMaestroForWidgetsTiles(){
+    for(i=0; i<=document.getElementsByClassName("tile-widget").length - 1; i++){
+        var element_selected_to_darke = getComputedStyle(document.getElementsByClassName("tile-widget")[i]).background;
+        document.getElementsByClassName("tile-widget")[i].id = "tile"+i;
+        var id = document.getElementById("tile"+i);
+        var strString = element_selected_to_darke.search(/url\(/i);
+        var endString = element_selected_to_darke.search(/.svg"\)/i) + 6;
+        var url = element_selected_to_darke.substring(strString, endString);
+        var linknosvg = url.substring(5, url.length-6);
+        var darked = linknosvg + "_dark.svg";
+        var exists = existsFile(darked);
+        if(exists == true){
+            id.style.background = 'url("'+ darked +'")'
+            id.style.backgroundSize = "100% 100%"
+        }
+    }
+}
+function tryDarkTiles(){
+    for(i=0; i<=document.getElementsByClassName("tile-widget").length - 1; i++){
+        var el_slct_2_verf = getComputedStyle(document.getElementsByClassName("tile-widget")[i]).background;
+        var endString = el_slct_2_verf.search(/.svg"\)/i);
+        var url = el_slct_2_verf.substring(endString-5,endString);
+        if(url=="_dark"){
+            return true
+        } else {
+            return false
+        }
+    }
+}
+function existsFile(url) {
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
+}
+
+function turnTheSuperLightModeMaestroForWidgetsTiles(){
+    for(i=0; i<=document.getElementsByClassName("tile-widget").length - 1; i++){
+        var element_selected_to_darke = getComputedStyle(document.getElementsByClassName("tile-widget")[i]).background;
+        document.getElementsByClassName("tile-widget")[i].id = "tile"+i;
+        var id = document.getElementById("tile"+i);
+        var strString = element_selected_to_darke.search(/url\(/i);
+        var endString = element_selected_to_darke.search(/.svg"\)/i) + 6;
+        var url = element_selected_to_darke.substring(strString, endString);
+        var linknosvg = url.substring(5, url.length-6);
+        var darked = linknosvg + "_dark.svg";
+        var exists = existsFile(darked);
+        if(exists == true){
+            id.style.background = 'url("'+ darked +'")'
+            id.style.backgroundSize = "100% 100%"
+        }
+    }
 }
