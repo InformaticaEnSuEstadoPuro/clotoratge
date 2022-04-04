@@ -1,12 +1,3 @@
-/* const d = new Date();
-
-
-var hour = d.getHours();
-var minute = d.getMinutes();
-
-document.querySelector(':root').style.setProperty("--dateNav", "'"+ndia + " " + MONTH + " " + year + "'");
- */
-
 function currentTime() {
     let d = new Date();
     const months = ["ene.","feb.","mar.","abr.","may.","jun.","jul.","ago.","sep.","oct.","nov.","dic."];
